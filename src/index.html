@@ -10,6 +10,8 @@
     Hello world!
   </h1>
 
+  <!--Utility-First Fundamentals-->
+  <!--Card example-->
   <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
     <div class="shrink-0">
       <img class="h-12 w-12" src="/src/chat-icon.png" alt="ChitChat Logo">
@@ -20,8 +22,7 @@
     </div>
   </div>
 
-  <br>
-
+  <!--Card example with button-->
   <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
     <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/src/michelle-o.jpeg" alt="Woman's Face">
     <div class="text-center space-y-2 sm:text-left">
@@ -37,10 +38,48 @@
     </div>
   </div>
   
+  <!--Button example-->
   <div>
     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Button Example
     </button>
   </div>
+
+  <!--Handling Hover, Focus, and Other States-->
+  <!--Hover example-->
+  <div>
+    <button class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded">
+      Save Changes
+    </button>
+  </div>
+
+  <!--Hover, focus, and active modifiers example-->
+  <button class="bg-violet-500 hover:bg-violet-400 active:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300">
+    Save changes
+  </button>
+
+  <!--First, last, odd, and even modifiers example-->
+  <table>
+    <tbody>
+      <!-- Use a white background for odd rows, and gray-100 for even rows-->
+      <tr class="odd:bg-white even:bg-gray-100">
+        <td>Name</td>
+        <td>Title</td>
+        <td>Email</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--Form states-->
+  <form>
+    <label class="block">
+      <span class="block text-sm font-medium text-gray-700">Username</span>
+      <input type="text" value="tbone" disabled class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+      focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
+      invalid:border-pink-500 invalid:text-pink-600focus:invalid:border-pink-500 focus:invalid:ring-pink-500
+      "/>
+    </label>
+  </form>
 
 </body>
 </html>
